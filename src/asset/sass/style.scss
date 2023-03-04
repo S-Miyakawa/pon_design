@@ -1,16 +1,16 @@
 // ──────────────────────────────
 // foundation
 // ──────────────────────────────
-@use "./foundation/reset";
-@use "./foundation/system";
-@use "./foundation/base";
+// @use "./foundation/reset";
+// @use "./foundation/system";
+// @use "./foundation/base";
 
 // ──────────────────────────────
 // layout
 // ──────────────────────────────
-@use "./layout/header";
-@use "./layout/body";
-@use "./layout/footer";
+// @use "./layout/header";
+// @use "./layout/body";
+// @use "./layout/footer";
 
 // ──────────────────────────────
 // object
@@ -18,20 +18,20 @@
 // ───────────────
 // component
 // ───────────────
-@use "./object/component/loading";
-@use "./object/component/section";
-@use "./object/component/table";
-@use "./object/component/lists";
-@use "./object/component/details";
-@use "./object/component/form";
-@use "./object/component/cta";
+// @use "./object/component/loading";
+// @use "./object/component/section";
+// @use "./object/component/table";
+// @use "./object/component/lists";
+// @use "./object/component/details";
+// @use "./object/component/form";
+// @use "./object/component/cta";
 
 // ───────────────
 // project
 // ───────────────
-@use "./object/project/contact";
+// @use "./object/project/contact";
 
 // ───────────────
 // object
 // ───────────────
-@use "./object/utility/utility";
+// @use "./object/utility/utility";
