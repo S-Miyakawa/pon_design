@@ -2,13 +2,38 @@
     "data": {
         "meta": {
             "home": {
-                "title": "HOMEページタイトル",
-                "description": "Site Description"
+                "title": "PON DESIGN",
+                "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。"
             },
-            "about": {
-                "title": "ABOUTページタイトル",
-                "description": "About Description",
-                "url": "about"
+            "news": {
+                "title": "NEWS - お知らせ｜PON DESIGN",
+                "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
+                "url": "news"
+            },
+            "service": {
+                "title": "SERVICE - 事業案内｜PON DESIGN",
+                "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
+                "url": "service"
+            },
+            "works": {
+                "title": "WORKS - 制作実績｜PON DESIGN",
+                "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
+                "url": "works"
+            },
+            "company": {
+                "title": "COMPANY - 私たちについて｜PON DESIGN",
+                "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
+                "url": "company"
+            },
+            "recruit": {
+                "title": "RECRUIT - 採用情報｜PON DESIGN",
+                "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
+                "url": "recruit"
+            },
+            "contact": {
+                "title": "CONTACT - お問い合わせ｜PON DESIGN",
+                "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
+                "url": "contact"
             }
         }
     }

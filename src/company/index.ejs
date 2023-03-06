@@ -1,0 +1,30 @@
+<%_ const path='./../'; _%>
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <!-- meta -->
+        <%- include(path + '_common/_head', {
+        path:path,meta:data.meta['company'],})%>
+    </head>
+    <body>
+        <!-- .l-header -->
+        <%- include(path + '_common/_header',{path:path,}) %>
+        <!-- /.l-header -->
+
+        <!-- .p-sub-mv -->
+        <%- include(path + '_common/_submv',{path:path,}) %>
+        <!-- /.p-index-mv -->
+
+        <!-- main -->
+        <main>
+
+
+            <%- include(path + '_common/_contact',{path:path,}) %>
+        </main>
+        <!-- /main -->
+
+        <div class="c-upbtn"></div>
+
+        <%- include(path + '_common/_footer',{path:path,}) %>
+    </body>
+</html>
