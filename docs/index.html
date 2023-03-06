@@ -23,6 +23,10 @@
         <link rel="icon" type="image/x-icon" href="./asset/img/favicon.ico" />
         <!-- css -->
         <link rel="stylesheet" href="./asset/css/style.css" />
+
+        <!-- js -->
+        <script src="./asset/js/swiper-bundle.min.js" defer></script>
+        <script src="./asset/js/script.js" defer></script>
     </head>
     <body>
         <!-- .l-header -->
@@ -178,8 +182,55 @@
 
         <section class="p-index-works">
             <div class="p-index-works__flex">
-                <div class="p-index-works__left"></div>
-                <div class="p-index-works__right"></div>
+                <div class="p-index-works__left">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img
+                                    src="asset/img/work01.webp"
+                                    alt="スムージーのサイトです"
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="asset/img/work02.webp"
+                                    alt="webカンファレンスのサイトです"
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="asset/img/work03.webp"
+                                    alt="女性向けファッションサイトです"
+                                />
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+                <div class="p-index-works__right">
+                    <div class="p-index-works__title">
+                        <h2 class="c-sectitle">
+                            <span class="c-sectitle__main">service</span>
+                            <span class="c-sectitle__sub">事業内容</span>
+                        </h2>
+                    </div>
+                    <p class="p-index-works__text">
+                        様々なジャンルのWebサイト制作が可能です。<br />
+                        ご購入やお申込み数の増加などを実現します！
+                    </p>
+                    <a href="/service" class="c-btn">more</a>
+                </div>
             </div>
         </section>
 
@@ -213,7 +264,5 @@
             </div>
         </footer>
         <!-- /.l-footer -->
-
-        <script src="./asset/js/script.js"></script>
     </body>
 </html>
