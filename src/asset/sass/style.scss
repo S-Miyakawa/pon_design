@@ -1,7 +1,7 @@
 // ──────────────────────────────
 // foundation
 // ──────────────────────────────
-// @use "./foundation/reset";
+@use "./foundation/reset";
 // @use "./foundation/system";
 // @use "./foundation/base";
 
@@ -35,3 +35,8 @@
 // object
 // ───────────────
 // @use "./object/utility/utility";
+
+// ───────────────
+// lib
+// ───────────────
+@use "./lib/swiper-bundle.min";
