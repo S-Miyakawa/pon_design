@@ -1,0 +1,42 @@
+[
+	{
+		"name": "index",
+		"text": ["HOME"],
+		"url": []
+	},
+	{
+		"name": "news",
+		"text": ["HOME","NEWS"],
+		"url": ["index.html"]
+	},
+	{
+		"name": "service",
+		"text": ["HOME","SERVICE"],
+		"url": ["index.html"]
+	},
+	{
+		"name": "works",
+		"text": ["HOME","WORKS"],
+			"url": ["index.html"]
+	},
+	{
+		"name": "company",
+		"text": ["HOME","COMPANY"],
+		"url": ["index.html"]
+	},
+	{
+		"name": "recruit",
+		"text": ["HOME","RECRUIT"],
+		"url": ["index.html"]
+	},
+	{
+		"name": "contact",
+		"text": ["HOME","CONTACT"],
+		"url": ["index.html"]
+	},
+	{
+		"name": "news-article",
+		"text": ["HOME","NEWS","WEBデザインニュースサイト「ウェブマガジン」に取材いただきました"],
+		"url": ["index.html","/news/"]
+	}
+]

@@ -5,6 +5,7 @@
         <!-- meta -->
         <%- include(path + '_common/_head', {
         path:path,meta:data.meta['news'],})%>
+
     </head>
     <body>
         <!-- .l-header -->
@@ -15,6 +16,10 @@
         <%- include(path + '_common/_submv',{path:path,}) %>
         <!-- /.p-index-mv -->
 
+        <!-- breadcrumb -->
+        <div class="bread"></div>
+        <!-- breadcrumb -->
+
         <!-- main -->
         <main>
 
@@ -22,7 +27,7 @@
             <%- include(path + '_common/_contact',{path:path,}) %>
         </main>
         <!-- /main -->
-        
+
         <%- include(path + '_component/_upbtn',{path:path,}) %>
 
         <%- include(path + '_common/_footer',{path:path,}) %>
