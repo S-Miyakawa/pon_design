@@ -8,32 +8,44 @@
             "news": {
                 "title": "NEWS - お知らせ｜PON DESIGN",
                 "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
-                "url": "news"
+                "url": "news",
+                "sub-title": "news",
+                "sub-subtitle": "お知らせ"
             },
             "service": {
                 "title": "SERVICE - 事業案内｜PON DESIGN",
                 "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
-                "url": "service"
+                "url": "service",
+                "sub-title": "service",
+                "sub-subtitle": "事業案内"
             },
             "works": {
                 "title": "WORKS - 制作実績｜PON DESIGN",
                 "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
-                "url": "works"
+                "url": "works",
+                "sub-title": "works",
+                "sub-subtitle": "制作実績"
             },
             "company": {
                 "title": "COMPANY - 私たちについて｜PON DESIGN",
                 "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
-                "url": "company"
+                "url": "company",
+                "sub-title": "company",
+                "sub-subtitle": "私たちについて"
             },
             "recruit": {
                 "title": "RECRUIT - 採用情報｜PON DESIGN",
                 "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
-                "url": "recruit"
+                "url": "recruit",
+                "sub-title": "recruit",
+                "sub-subtitle": "採用情報"
             },
             "contact": {
                 "title": "CONTACT - お問い合わせ｜PON DESIGN",
                 "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
-                "url": "contact"
+                "url": "contact",
+                "sub-title": "contact",
+                "sub-subtitle": "お問い合わせ"
             }
         }
     }
