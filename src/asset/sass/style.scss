@@ -2,15 +2,18 @@
 // foundation
 // ──────────────────────────────
 @use "./foundation/reset";
-// @use "./foundation/system";
-// @use "./foundation/base";
+@use "./foundation/base";
+@use "./foundation/color";
+@use "./foundation/mixin";
+@use "./foundation/variable";
 
 // ──────────────────────────────
 // layout
 // ──────────────────────────────
-// @use "./layout/header";
-// @use "./layout/body";
-// @use "./layout/footer";
+@use "./layout/header";
+@use "./layout/cta";
+@use "./layout/footer";
+@use "./layout/main";
 
 // ──────────────────────────────
 // object
@@ -18,23 +21,24 @@
 // ───────────────
 // component
 // ───────────────
-// @use "./object/component/loading";
-// @use "./object/component/section";
-// @use "./object/component/table";
-// @use "./object/component/lists";
-// @use "./object/component/details";
-// @use "./object/component/form";
-// @use "./object/component/cta";
+@use "./object/component/breadcrumbs";
+@use "./object/component/buttons";
+@use "./object/component/section";
 
 // ───────────────
 // project
 // ───────────────
-// @use "./object/project/contact";
+@use "./object/project/contact";
+@use "./object/project/company";
+@use "./object/project/index";
+@use "./object/project/news";
+@use "./object/project/recruit";
+@use "./object/project/works";
 
 // ───────────────
-// object
+// utility
 // ───────────────
-// @use "./object/utility/utility";
+@use "./object/utility/utility";
 
 // ───────────────
 // lib
