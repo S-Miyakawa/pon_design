@@ -1,5 +1,8 @@
+@use 'color' as *;
+
 /* base
 --------------------------- */
 body {
 	font-family: 'Montserrat', 'Noto Sans JP',sans-serif;
+	color: $cDarkGray;
 }

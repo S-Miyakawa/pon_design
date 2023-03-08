@@ -1,4 +1,6 @@
 @use '../../foundation/color' as *;
+@use '../../foundation/mixin' as *;
+
 
 .c-btn-trans {
 	display: flex;
@@ -11,6 +13,7 @@
 	margin: 0 auto;
 	font-size: 15px;
 	font-weight: bold;
+	color: $cWhite;
 	letter-spacing: 0.05em;
 	line-height: 100px;
 	text-transform: uppercase;
@@ -39,6 +42,38 @@
 		transition: all 0.3s;
 	}
 }
+
+.c-btn {
+	@extend .c-btn-trans;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 200%;
+		height: 100%;
+		background: linear-gradient(to left,#7633A4,#250D65 50%,#7633A4);
+		transition: all 0.3s;
+	}
+
+	&:hover {
+		opacity: 1;
+
+		&::before {
+			transform: translateX(-50%);
+		}
+
+		&::after {
+			opacity: 1;
+		}
+	}
+}
+
 
 .c-news-title {
 	font-family: 'Montserrat', sans-serif;;
