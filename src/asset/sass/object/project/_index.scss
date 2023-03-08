@@ -1,4 +1,6 @@
 @use '../../foundation/color' as *;
+@use '../../foundation/mixin' as *;
+
 
 .p-index-mv {
 	width: 100%;
@@ -12,6 +14,7 @@
 	align-items: center;
 	text-align: center;
 	color: $cWhite;
+	position: relative;
 
 	&__inner {
 
@@ -19,7 +22,6 @@
 	&__title {
 		font-size: 72px;
 		font-weight: bold;
-		letter-spacing: 0.0em;
 		line-height: 1.25;
 		margin-bottom: 15px;
 		text-transform: uppercase;
@@ -30,5 +32,57 @@
 		letter-spacing: 0.1em;
 		line-height: 1.58;
 		margin-bottom: 47px;
+	}
+	&__scroll {
+		position: absolute;
+		bottom: 0;
+		right: 35px;
+		width: 60px;
+		height: 120px;
+		text-align: center;
+
+		&--text {
+			font-size: 12px;
+			font-weight: 300;
+			letter-spacing: 0.2em;
+			line-height: 52px;
+			text-transform: uppercase;
+			transform: rotate(90deg);
+			transform-origin: right;
+		}
+
+		&::after {
+			content: '';
+			background-color: $cWhite;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 1px;
+			height: 80px;
+			@include animation(
+				$name:scrollAnime,
+				$iteration-count: infinite,
+				$duration: 1.5s
+				)
+		}
+	}
+}
+
+@keyframes scrollAnime {
+	0% {
+		transform-origin: bottom;
+		transform: scaleY(1);
+	}
+	50% {
+		transform-origin: bottom;
+		transform: scaleY(0);
+	}
+	50.1% {
+		transform-origin: top;
+		transform: scaleY(0);
+	}
+	100% {
+		transform-origin: top;
+		transform: scaleY(1);
 	}
 }
