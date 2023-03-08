@@ -1,0 +1,36 @@
+@use '../../foundation/color' as *;
+
+.c-btn-trans {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $cWhite;
+	border-radius: 50px;
+	width: 220px;
+	height: 55px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	line-height: 100px;
+	text-transform: uppercase;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+		border-left: 6px solid $cWhite;
+		border-top: 6px solid transparent;
+		border-bottom: 6px solid transparent;
+		border-radius: 3px;
+		transition: all 0.3s;
+	}
+
+	&:hover::after {
+		transform: translate(5px,-50%);
+		opacity: 0.8;
+	}
+}
