@@ -17,24 +17,50 @@ window.onload = function(){
 
 		let fileName = window.location.href.split('/').pop().replace('.html','');
 
-		let bread = document.querySelector('.bread');
+		if(fileName != "index"){
+			let bread = document.querySelector('.bread');
 
-		let code = '';
-
-		data.forEach(el => {
-			if(el.name === fileName){
-				code = '<ul>';
-
-				for(let i = 0; i<el.text.length -1 ;i++){
-					code += '<li><a href="' + el.url[i] + '">' + el.text[i] + '</a></li>';
+			let code = '';
+	
+			data.forEach(el => {
+				if(el.name === fileName){
+					code = '<ul>';
+	
+					for(let i = 0; i<el.text.length -1 ;i++){
+						code += '<li><a href="' + el.url[i] + '">' + el.text[i] + '</a></li>';
+					}
+					code += `<li>${el.text[el.text.length-1]}</li></ul>`;
 				}
-				code += `<li>${el.text[el.text.length-1]}</li></ul>`;
-			}
-
-			bread.innerHTML = code;
-		})
+	
+				bread.innerHTML = code;
+			})
+		}
 	}
 	// <-- パンくずリスト
 
+	// swipper -->
+	const swiper = new Swiper('.swiper', {
+		// Optional parameters
+		loop: true,
+	
+		// If we need pagination
+		pagination: {
+			el: 'swiper-pagination',
+			type: 'bullets',
+			clickable: true,
+		},
+	
+		// Navigation arrows
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	
+		// And if we need scrollbar
+		// scrollbar: {
+		// 	el: '.swiper-scrollbar',
+		// },
+	});
+	// <-- swipper
 }
 
