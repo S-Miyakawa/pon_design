@@ -17,3 +17,21 @@
     fill-mode: $fill-mode;
   }
 }
+
+$mq-breakpoints: (
+  'xs': 321px,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 960px,
+  'xl': 1140px,
+  'xxl': 1300px,
+) !default;
+@mixin mq($breakpoint: md, $rule: min) {
+  $breakpoint: map-get($mq-breakpoints, $breakpoint);
+  @if $rule == max {
+    $breakpoint: $breakpoint - 1px;
+  }
+  @media screen and (#{$rule}-width: $breakpoint) {
+    @content;
+  }
+}

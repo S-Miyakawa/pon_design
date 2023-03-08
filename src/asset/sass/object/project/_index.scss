@@ -1,5 +1,7 @@
+@use '../../foundation/variable' as *;
 @use '../../foundation/color' as *;
 @use '../../foundation/mixin' as *;
+@use '../component/buttons' as *;
 
 
 .p-index-mv {
@@ -84,5 +86,43 @@
 	100% {
 		transform-origin: top;
 		transform: scaleY(1);
+	}
+}
+
+.p-index-news {
+	width: 100%;
+	max-width: $contentWidth;
+	margin: 0 auto;
+
+	&__flex {
+		max-width: 917px;
+		display: flex;
+		justify-content: space-between;
+		margin: 70px auto 0;
+	}
+	&__left {
+		width: 18.5%;
+		min-width: 170px;
+	}
+	&__right {
+		width: 81.5%;
+	}
+
+	&__dl {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__dt {
+		width: 15%;
+		margin-bottom: 15px;
+	}
+	&__dd {
+		width: 85%;
+		margin-bottom: 15px;
+	}
+	&__dt:last-child,
+	&__dd:last-child {
+		margin-bottom: 0;
 	}
 }

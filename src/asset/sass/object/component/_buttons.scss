@@ -39,3 +39,17 @@
 		transition: all 0.3s;
 	}
 }
+
+.c-news-title {
+	font-family: 'Montserrat', sans-serif;;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	line-height: 26px;
+	color: $cDarkGray;
+	text-align: center;
+	display: inline-block;
+	width: 82px;
+	background-color: $cLightGray;
+	border-radius: 14px;
+}
