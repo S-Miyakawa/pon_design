@@ -114,6 +114,10 @@
 		flex-wrap: wrap;
 	}
 	&__dt {
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		color: $cDarkGray;
 		width: 15%;
 		margin-bottom: 15px;
 	}
@@ -124,5 +128,12 @@
 	&__dt:last-child,
 	&__dd:last-child {
 		margin-bottom: 0;
+	}
+	&__link {
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		color: $cDarkGray;
+		margin-left: 20px;
 	}
 }
