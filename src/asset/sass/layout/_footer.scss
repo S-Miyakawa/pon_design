@@ -1,2 +1,42 @@
+@use '../foundation/color' as *;
+
 /* l-footer
 --------------------------- */
+.l-footer {
+	width: 100%;
+	height: 173px;
+	background-color: $cBaseBlack;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+
+	&__ul {
+		display: flex;
+		margin-bottom: 22px;
+	}
+	&__li:not(:first-child) {
+		margin-left: 20px;
+	}
+	&__link {
+		font-size: 14px;
+		color: $cWhite;
+		text-transform: uppercase;
+		transition: opacity 0.3s;
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+	&__copy {
+		font-size: 10px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		color: #A798B7;
+		transition: opacity 0.3s;
+
+		&:hover {
+			opacity: 0.9;
+		}
+	}
+}
