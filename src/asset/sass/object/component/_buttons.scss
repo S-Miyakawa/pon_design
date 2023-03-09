@@ -88,3 +88,38 @@
 	background-color: $cLightGray;
 	border-radius: 14px;
 }
+
+.c-upbtn {
+	position: fixed;
+	bottom: 45px;
+	right: 45px;
+	width: 50px;
+	height: 50px;
+	z-index: 100;
+	border-radius: 50%;
+	background-color: $cWhite;
+	box-shadow: 0 0 6px rgba(0,0,0, 0.16);
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 9px;
+		height: 9px;
+		transform: translate(-50%,-60%) rotate(45deg);
+		border-top: $cColorMain 2px solid;
+		border-left: $cColorMain 2px solid;
+		border-radius: 1px;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 2px;
+		height: 10px;
+		transform: translate(-50%,-40%);
+		background-color: $cColorMain;
+	}
+}
