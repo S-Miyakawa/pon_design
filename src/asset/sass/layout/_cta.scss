@@ -1,0 +1,21 @@
+@use '../foundation/color' as *;
+
+.l-cta {
+	width: 100%;
+	height: 356px;
+	background-color: $cLightGray3;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&__title {
+		margin-bottom: 30px;
+	}
+	&__text {
+		font-size: 15px;
+		letter-spacing: 0.05em;
+		margin-bottom: 30px;
+	}
+}
