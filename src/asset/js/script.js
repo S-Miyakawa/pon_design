@@ -1,3 +1,20 @@
+$(function(){
+	// swipper -->
+	const swiper = new Swiper(".swiper", {
+		loop: true,
+		// ページネーションが必要なら追加
+		pagination: {
+			el: ".swiper-pagination"
+		},
+		// ナビボタンが必要なら追加
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev"
+		}
+	});
+	// <-- swipper
+});
+
 window.onload = function(){
 
 	// パンくずリスト -->
@@ -37,30 +54,5 @@ window.onload = function(){
 		}
 	}
 	// <-- パンくずリスト
-
-	// swipper -->
-	const swiper = new Swiper('.swiper', {
-		// Optional parameters
-		loop: true,
-	
-		// If we need pagination
-		pagination: {
-			el: 'swiper-pagination',
-			type: 'bullets',
-			clickable: true,
-		},
-	
-		// Navigation arrows
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-	
-		// And if we need scrollbar
-		// scrollbar: {
-		// 	el: '.swiper-scrollbar',
-		// },
-	});
-	// <-- swipper
 }
 

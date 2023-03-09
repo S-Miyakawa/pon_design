@@ -198,6 +198,8 @@
 	&__left {
 		max-width: 750px;
 		width: 60%;
+		position: relative;
+		z-index: 0;
 	}
 	&__right {
 		width: 40%;
@@ -246,10 +248,21 @@
 		border-radius: 3px;
 		transform: rotate(-45deg);
 	}
-	& .swiper-patination {
-		margin-top: 20px;
-		position: relative !important;
-	}
+	
+}
+
+.swiper-pagination-bullets {
+	position: static;
+	margin-top: 16px;
+} 
+.swiper-pagination-bullet {
+	width: 12px !important;
+	height: 12px !important;
+	margin: 0 0 0 10px !important;
+	background: #333 !important;
+}
+.swiper-pagination-bullet:first-child {
+  margin: 0 !important;
 }
 
 
