@@ -2,6 +2,8 @@ $(function(){
 	// swipper -->
 	const swiper = new Swiper(".swiper", {
 		loop: true,
+		autoplay: true,
+		effect: 'fade',
 		// ページネーションが必要なら追加
 		pagination: {
 			el: ".swiper-pagination"
