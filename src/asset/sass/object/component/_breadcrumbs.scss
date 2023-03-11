@@ -1,0 +1,31 @@
+@use '../../foundation/color' as *;
+
+.bread {
+	width: 100%;
+	height: 45px;
+	background-color: $cLightGray2;
+
+	&__ul {
+		width: 1110px;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+	}
+	&__li {
+		font-size: 12px;
+		letter-spacing: 0.05em;
+
+		&:not(:first-child) {
+			margin-left: 30px;
+			position: relative;
+			&::before {
+				content: '>';
+				position: absolute;
+				top: 0;
+				left: -20px;
+
+			}
+		}
+	}
+}
