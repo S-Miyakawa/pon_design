@@ -1,0 +1,27 @@
+@use '../foundation/color' as *;
+
+.l-sub-mv {
+	height: 240px;
+	background-image: url(../img/mv.webp);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	&__inner {
+		color: $cWhite;
+		padding-top: 110px;
+	}
+	&__title {
+		font-size: 36px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 5px;
+	}
+	&__subtitle {
+		font-size: 13px;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+	}
+}
