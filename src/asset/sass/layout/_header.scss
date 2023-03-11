@@ -11,6 +11,7 @@
 	color: $cWhite;
 	padding: 0 30px;
 	z-index: 100;
+	transition: all 0.3s;
 
 	&__inner {
 		width: 100%;
@@ -32,5 +33,10 @@
 	}
 	&__hamburger {
 		display: none;
+	}
+
+	&.inview {
+		height: 64px;
+		background-color: $cColorMain2;
 	}
 }

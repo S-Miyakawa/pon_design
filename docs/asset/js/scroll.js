@@ -1,0 +1,1 @@
+const child=document.querySelector(".l-header"),cb=function(e,o){e.forEach(e=>{e.isIntersecting?e.target.classList.add("inview"):e.target.classList.remove("inview")})},options={root:null,rootMargin:"-100px 0px 0px 0px",threshold:1},io=new IntersectionObserver(cb,options);io.observe(child);
