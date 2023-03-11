@@ -1,0 +1,83 @@
+@use '../../foundation/color' as *;
+
+.p-recruit {
+	text-align: center;
+	background-image: url(../img/bg-geometry.png);
+	background-repeat: repeat;
+
+	&__big-title {
+		font-size: 72px;
+		font-weight: bold;
+		letter-spacing: 0.01em;
+		color: $cColorMain;
+		padding-top: 100px;
+		margin-bottom: 20px;
+	}
+	&__big-subtitle {
+		font-size: 32px;
+		letter-spacing: 0.05em;
+		color: $cColorMain;
+		margin-bottom: 32px;
+	}
+	&__text {
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		line-height: 28px;
+	}
+	&__img {
+		clip-path: polygon(0 15%,100% 0,100% 85%,0 100%);
+		margin: 20px auto 70px;
+	}
+
+	&__box {
+		width: 1110px;
+		border: 1px solid #B8AED5;
+		border-radius: 10px;
+		background-color: $cWhite;
+		padding: 57px 0;
+		margin: 36px auto 130px;
+	}
+	&__sub-title {
+		font-size: 24px;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+	}
+	&__dl {
+		width: 920px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		text-align: left;
+		margin: 0 auto 50px;
+	}
+	&__dt {
+		width: 180px;
+		font-size: 15px;
+		font-weight: normal;
+		letter-spacing: 0.05em;
+		line-height: 27px;
+		border-bottom: 1px solid #DDDDDD;
+		padding: 28px 0 28px 20px;
+	}
+	&__dd {
+		width: 740px;
+		font-size: 15px;
+		font-weight: normal;
+		letter-spacing: 0.05em;
+		line-height: 27px;
+		border-bottom: 1px solid #DDDDDD;
+		padding: 28px 0 28px 0;
+	}
+	&__ul {
+		list-style-type:disc;
+		margin: 20px 0 0 20px;
+	}
+	&__under-btn {
+		font-size: 12px;
+		line-height: 2.4;
+	}
+
+	&__video {
+		margin: 36px auto 110px;
+	}
+}
