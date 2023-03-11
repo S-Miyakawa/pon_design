@@ -1,0 +1,121 @@
+@use '../../foundation/color' as *;
+
+.p-company {
+	&__top {
+		width: 1300px;
+		text-align: center;
+		position: relative;
+		z-index: 0;
+		padding: 0 0 80px;
+		margin: -10px auto 30px;
+		background-image: url(../img/bg-circle.webp);
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+
+	&__title {
+		padding: 136px 0 30px;
+	}
+	&__goal {
+		display: inline-block;
+		font-size: 40px;
+		font-weight: bold;
+		letter-spacing: 0.05em;
+		margin-bottom: 41px;
+		position: relative;
+		z-index: 1;
+		background:linear-gradient(transparent 65%, #F5F534 65%);
+	}
+	&__text {
+		font-size: 15px;
+		letter-spacing: 0.05em;
+		line-height: 27px;
+		margin-bottom: 30px;
+	}
+	&__inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	&__img {
+		position: absolute;
+		&:nth-child(1){
+			bottom: 50%;
+			left: 0;
+		}
+		&:nth-child(2){
+			bottom: 50%;
+			right: 0;
+		}
+		&:nth-child(3){
+			top: 57%;
+			left: 11%;
+		}
+		&:nth-child(4){
+			top: 57%;
+			right: 11%;
+		}
+	}
+
+	&__president {
+		max-width: 1110px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__president-left {
+		width: 445px;
+	}
+	&__president-right {
+		width: 610px;
+	}
+	&__president-text {
+		font-size: 15px;
+		letter-spacing: 0.05em;
+		line-height: 25px;
+		margin-bottom: 30px;
+	}
+
+	&__title {
+		text-align: center;
+	}
+
+	&__dl-block {
+		max-width: 1110px;
+		margin: 0 auto;
+	}
+	&__dl {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 60px;
+	}
+	&__dt {
+		width: 235px;
+		font-size: 15px;
+		font-weight: bold;
+		line-height: 90px;
+		border-bottom: 1px solid $cLightGray;
+		padding-left: 10px;
+	}
+	&__dd {
+		width: 875px;
+		font-size: 15px;
+		font-weight: normal;
+		line-height: 90px;
+		border-bottom: 1px solid $cLightGray;
+	}
+	&__map-block {
+		max-width: 1110px;
+		margin: 0 auto 120px;
+	}
+	&__map-link {
+		display: inline-block;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		color: #240C6A;
+		margin-top: 7px;
+	}
+}
