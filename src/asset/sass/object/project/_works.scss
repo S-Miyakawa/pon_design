@@ -1,0 +1,39 @@
+@use '../../foundation/color' as *;
+
+.p-works {
+	&__contents {
+		max-width: 1110px;
+		margin: 70px auto 100px;
+	}
+
+	&__flex {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+	}
+	&__item {
+		width: 31.5%;
+		text-align: center;
+		margin-right: 2.6%;
+		margin-bottom: 15px;
+		&:nth-child(3) {
+			margin-right: 0;
+		}
+	}
+	&__img {
+		border: 1px solid $cLightGray;
+		max-width: 100%;
+	}
+	&__name {
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		line-height: 55px;
+		margin-top: 12px;
+	}
+	&__link {
+
+		&:hover .p-works__name{
+			text-decoration: underline;
+		}
+	}
+}
