@@ -8,8 +8,17 @@ document.addEventListener('DOMContentLoaded',function(){
 			header.classList.add('inview');
 		}
 	}
+	const btnView = function(el, isIntersecting){
+		const cupbtn = document.querySelector('.c-upbtn');
+		if(isIntersecting){
+			cupbtn.classList.remove('inview');
+		}else{
+			cupbtn.classList.add('inview');
+		}
+	}
 
-	const hv = new scrollObserver('.p-index-header-trigger',headerView,{once:false});
+	const hv = new scrollObserver('.p-header-trigger',headerView,{once:false});
+	const bv = new scrollObserver('.p-upbtn-trigger',btnView,{once:false});
 
 })
 
