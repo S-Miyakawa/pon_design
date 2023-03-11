@@ -30,6 +30,27 @@
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 		margin-left: 25px;
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: $cWhite;
+			transform: scaleX(0);
+			transform-origin: 0 0;
+			transition: transform 0.3s;
+		}
+
+		&:hover {
+			&::after {
+				transform-origin: 0 0;
+				transform: scaleX(1);
+			}
+		}
 	}
 	&__hamburger {
 		display: none;
