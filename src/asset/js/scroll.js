@@ -1,18 +1,50 @@
-const child = document.querySelector('.l-header');
-const cb = function(entries, observer){
-	entries.forEach((entry)=>{
-		if(entry.isIntersecting){
-			entry.target.classList.add('inview');
-		}else{
-			entry.target.classList.remove('inview');
-		}
-	});
-}
+document.addEventListener('DOMContentLoaded',function(){
 
-const options = {
-	root: null,
-	rootMargin: "-100px 0px 0px 0px",
-	threshold: 1
+	const headerView = function(el, isIntersecting){
+		const header = document.querySelector('.l-header');
+		if(isIntersecting){
+			header.classList.remove('inview');
+		}else{
+			header.classList.add('inview');
+		}
+	}
+
+	const hv = new scrollObserver('.p-index-header-trigger',headerView,{once:false});
+
+})
+
+class scrollObserver {
+	constructor(els, cb, options){
+		this.els = document.querySelectorAll(els);
+		const defaultOptions = {
+			root: null,
+			rootMargin: "0px",
+			threshold: 1,
+			once: true
+		};
+		this.cb = cb;
+		this.options = Object.assign(defaultOptions, options);
+		this.once = this.options.once;
+		this._init();
+	}
+	_init(){
+		const callback = function(entries, observer){
+			entries.forEach((entry)=>{
+				if(entry.isIntersecting){
+					this.cb(entry.target,true);
+					if(this.once){
+						observer.unobserve(entry.target);
+					}
+				}else{
+					this.cb(entry.target,false);
+				}
+			});
+		}
+		this.io = new IntersectionObserver(callback.bind(this), this.options);
+		this.els.forEach(el => this.io.observe(el));
+	}
+
+	destory(){
+		this.io.disconnect();
+	}
 }
-const io = new IntersectionObserver(cb, options);
-io.observe(child);

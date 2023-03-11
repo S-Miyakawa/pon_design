@@ -36,7 +36,7 @@ window.onload = function(){
 
 		let fileName = window.location.href.split('/').pop().replace('.html','');
 
-		if(fileName != "index"){
+		if(fileName != "index" && fileName !== ""){
 			let bread = document.querySelector('.bread');
 
 			let code = '';
