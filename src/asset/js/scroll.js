@@ -16,9 +16,18 @@ document.addEventListener('DOMContentLoaded',function(){
 			cupbtn.classList.add('inview');
 		}
 	}
+	const breadView = function(el, isIntersecting){
+		const bread = document.querySelector('.bread');
+		if(isIntersecting){
+			bread.classList.remove('inview');
+		}else{
+			bread.classList.add('inview');
+		}
+	}
 
 	const hv = new scrollObserver('.p-header-trigger',headerView,{once:false});
 	const bv = new scrollObserver('.p-upbtn-trigger',btnView,{once:false});
+	const brv = new scrollObserver('.c-bread-trigger',breadView,{once:false});
 
 })
 

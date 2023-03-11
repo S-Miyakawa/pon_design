@@ -1,6 +1,7 @@
 @use '../../foundation/color' as *;
 
 .bread {
+	position: relative;
 	width: 100%;
 	height: 45px;
 	background-color: $cLightGray2;
@@ -28,4 +29,17 @@
 			}
 		}
 	}
+
+	&.inview {
+		position: fixed;
+		top: 64px;
+		left: 0;
+	}
+}
+
+.c-bread-trigger {
+	position: absolute;
+	top: 0;
+	left:0;
+	height: calc(240px - 65px);
 }
