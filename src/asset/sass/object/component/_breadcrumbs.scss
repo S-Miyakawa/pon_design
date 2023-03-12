@@ -30,6 +30,13 @@
 		}
 	}
 
+	&__link {
+		color: $cColorMain;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 	&.inview {
 		position: fixed;
 		top: 64px;
