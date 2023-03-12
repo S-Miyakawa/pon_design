@@ -25,15 +25,17 @@
 		font-size: 72px;
 		font-weight: bold;
 		line-height: 1.25;
+		letter-spacing: 0.01em;
 		margin-bottom: 15px;
 		text-transform: uppercase;
+		margin-top: -9px;
 	}
 	&__subtitle {
 		font-size: 24px;
 		font-weight: 300;
 		letter-spacing: 0.1em;
 		line-height: 1.58;
-		margin-bottom: 47px;
+		margin-bottom: 52px;
 	}
 	&__scroll {
 		position: absolute;
@@ -101,43 +103,49 @@
 		margin: 70px auto 0;
 	}
 	&__left {
-		width: 18.5%;
+		width: 19%;
 		min-width: 170px;
+		margin-top: 14px;
 	}
 	&__right {
-		width: 81.5%;
+		width: 81%;
 	}
 
 	&__dl {
 		display: flex;
+		width: 100%;
 		justify-content: space-between;
+		align-items: center;
 		flex-wrap: wrap;
 	}
 	&__dt {
-		font-size: 15px;
+		width: 13%;
+		font-size: 14px;
 		font-weight: 400;
-		letter-spacing: 0.1em;
-		width: 15%;
-		margin-bottom: 15px;
+		letter-spacing: 0.05em;
+		line-height: 40px;
 	}
 	&__dd {
-		width: 85%;
-		margin-bottom: 15px;
+		width: 87%;
+		line-height: 40px;
 	}
 	&__dt:last-child,
 	&__dd:last-child {
 		margin-bottom: 0;
 	}
 	&__link {
-		font-size: 15px;
+		font-size: 14px;
 		font-weight: 400;
 		letter-spacing: 0.05em;
 		margin-left: 20px;
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
 .p-index-service {
-	max-width: $contentWidth;
+	max-width: 1110px;
 	margin: 140px auto;
 
 	&__title {
@@ -148,13 +156,16 @@
 
 	&__contents {
 		display: flex;
+		width: 100%;
 		justify-content: space-between;
-		margin: 29px auto 30px;
+		margin: 27px auto 30px;
 	}
 	&__item {
-		width: 31%;
+		width: 31.5%;
 	}
 	&__img {
+		width: 100%;
+		object-fit: cover;
 		margin-bottom: 22px;
 	}
 	&__item-title {
@@ -277,23 +288,24 @@
 	position: relative;
 	z-index: 0;
 	padding: 0 0 80px;
-	margin: 40px auto 70px;
+	margin: 40px auto 90px;
 	background-image: url(../img/bg-circle.webp);
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: 56% top;
+	background-size: contain;
 
 	&__title {
-		padding: 136px 0 30px;
+		padding: 110px 0 20px;
 	}
 	&__goal {
 		display: inline-block;
 		font-size: 40px;
 		font-weight: bold;
-		letter-spacing: 0.05em;
-		margin-bottom: 41px;
+		letter-spacing: 0.02em;
+		margin-bottom: 36px;
 		position: relative;
 		z-index: 1;
-		background:linear-gradient(transparent 65%, #F5F534 65%);
+		background:linear-gradient(transparent 68%, #F5F534 68%);
 	}
 	&__text {
 		font-size: 15px;
@@ -311,20 +323,20 @@
 	&__img {
 		position: absolute;
 		&:nth-child(1){
-			bottom: 50%;
+			top: 16%;
 			left: 0;
 		}
 		&:nth-child(2){
-			bottom: 50%;
+			top: 16%;
 			right: 0;
 		}
 		&:nth-child(3){
-			top: 57%;
-			left: 11%;
+			top: 60%;
+			left: 11.3%;
 		}
 		&:nth-child(4){
-			top: 57%;
-			right: 11%;
+			top: 60%;
+			right: 11.3%;
 		}
 	}
 }
@@ -344,7 +356,7 @@
 		width: 40%;
 		height: 332px;
 		text-align: center;
-		background-color: $cLightGray3;
+		background-color: $cLightGray2;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

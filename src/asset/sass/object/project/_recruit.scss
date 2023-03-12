@@ -10,37 +10,48 @@
 		font-weight: bold;
 		letter-spacing: 0.01em;
 		color: $cColorMain;
-		padding-top: 100px;
-		margin-bottom: 20px;
+		padding-top: 95px;
+		margin-bottom: 15px;
 	}
 	&__big-subtitle {
 		font-size: 32px;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.02em;
 		color: $cColorMain;
-		margin-bottom: 32px;
+		margin-bottom: 30px;
 	}
 	&__text {
 		font-size: 16px;
 		letter-spacing: 0.05em;
 		line-height: 28px;
 	}
+	&__img-block {
+		width: 100%;
+	}
 	&__img {
+		width: 100%;
 		clip-path: polygon(0 15%,100% 0,100% 85%,0 100%);
-		margin: 20px auto 70px;
+		object-fit: cover;
+		margin: 40px auto 70px;
+	}
+	&__title--main {
+		font-size: 32px;
+		font-weight: bold;
+		letter-spacing: 0.02em;
+		color: $cColorMain;
 	}
 
 	&__box {
 		width: 1110px;
-		border: 1px solid #B8AED5;
+		border: 1px solid #b067cf;
 		border-radius: 10px;
 		background-color: $cWhite;
-		padding: 57px 0;
-		margin: 36px auto 130px;
+		padding: 65px 0 57px;
+		margin: 28px auto 130px;
 	}
 	&__sub-title {
 		font-size: 24px;
 		font-weight: bold;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.03em;
 	}
 	&__dl {
 		width: 920px;
@@ -48,25 +59,30 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 		text-align: left;
-		margin: 0 auto 50px;
+		margin: 40px auto 50px;
 	}
 	&__dt {
-		width: 180px;
+		width: 195px;
 		font-size: 15px;
-		font-weight: normal;
+		font-weight: bold;
 		letter-spacing: 0.05em;
 		line-height: 27px;
 		border-bottom: 1px solid #DDDDDD;
-		padding: 28px 0 28px 20px;
+		padding: 30px 0 30px 10px;
+
+		&:nth-of-type(9) {
+			display: flex;
+			align-items: center;
+		}
 	}
 	&__dd {
-		width: 740px;
+		width: 725px;
 		font-size: 15px;
 		font-weight: normal;
 		letter-spacing: 0.05em;
 		line-height: 27px;
 		border-bottom: 1px solid #DDDDDD;
-		padding: 28px 0 28px 0;
+		padding: 30px 0 30px 0;
 	}
 	&__ul {
 		list-style-type:disc;

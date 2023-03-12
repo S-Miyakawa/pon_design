@@ -4,25 +4,27 @@
 --------------------------- */
 .l-footer {
 	width: 100%;
-	height: 173px;
+	height: 190px;
 	background-color: $cBaseBlack;
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	flex-direction: column;
 	text-align: center;
 
 	&__ul {
+		width: 100%;
 		display: flex;
-		margin-bottom: 22px;
+		justify-content: center;
+		margin-bottom: 36px;
 	}
 	&__li:not(:first-child) {
 		margin-left: 20px;
 	}
 	&__link {
-		font-size: 14px;
+		font-size: 12px;
 		color: $cWhite;
 		text-transform: uppercase;
+		letter-spacing: 0.1em;
 		transition: opacity 0.3s;
 		&:hover {
 			opacity: 0.8;
@@ -30,7 +32,7 @@
 	}
 	&__copy {
 		font-size: 10px;
-		letter-spacing: 0.05em;
+		letter-spacing: 0.07em;
 		text-transform: uppercase;
 		color: #A798B7;
 		transition: opacity 0.3s;

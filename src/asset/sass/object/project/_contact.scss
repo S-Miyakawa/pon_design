@@ -5,10 +5,10 @@
 .p-contact {
 
 	&__comment {
-		font-size: 16px;
+		font-size: 15px;
 		letter-spacing: 0.05em;
 		text-align: center;
-		margin: 67px auto 38px;
+		margin: 75px auto 45px;
 	}
 
 	&__box {
@@ -19,13 +19,17 @@
 		margin: 0 auto 70px;
 	}
 	&__dt {
-		font-size: 16px;
+		font-size: 15px;
 		font-weight: bold;
 		line-height: 27px;
+		letter-spacing: 0.05em;
 		margin-bottom: 5px;
 	}
 	&__dd {
-		margin-bottom: 27px;
+		font-size: 15px;
+		letter-spacing: 0.05em;
+		line-height: 1.5;
+		margin-bottom: 32px;
 		&--space {
 			display: block;
 			height: 5px;
@@ -44,7 +48,7 @@
 	}
 	& input[type="radio"]:nth-child(2),
 	& input[type="radio"]:nth-child(3) {
-		margin-left: 40px;
+		margin-left: 35px;
 	}
 	& input[type="text"],
 	& input[type="email"],
@@ -77,12 +81,12 @@
 		border: 1px solid #AAAAAA;
 		border-radius: 6px;
 		padding: 12px 8px;
-
+		margin-bottom: 15px;
 	}
 	&__btn {
 		text-align: center;
 		position: relative;
 		width: 220px;
-		margin: 0 auto;
+		margin: 0 auto 0;
 	}
 }

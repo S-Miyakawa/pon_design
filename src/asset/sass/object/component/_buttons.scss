@@ -9,12 +9,12 @@
 	border: 1px solid $cWhite;
 	border-radius: 50px;
 	width: 220px;
-	height: 55px;
+	height: 58px;
 	margin: 0 auto;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: bold;
 	color: $cWhite;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.1em;
 	line-height: 100px;
 	text-transform: uppercase;
 	position: relative;
@@ -33,7 +33,7 @@
 		content: '';
 		position: absolute;
 		top: 50%;
-		right: 20px;
+		right: 22px;
 		transform: translateY(-50%);
 		border-left: 6px solid $cWhite;
 		border-top: 6px solid transparent;
@@ -121,7 +121,7 @@
 	color: $cDarkGray;
 	text-align: center;
 	display: inline-block;
-	width: 82px;
+	width: 80px;
 	background-color: $cLightGray;
 	border-radius: 14px;
 }
