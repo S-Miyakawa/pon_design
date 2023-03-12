@@ -1,3 +1,88 @@
+@use '../../foundation/color' as *;
+
 /* p-contact
 --------------------------- */
+.p-contact {
 
+	&__comment {
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		text-align: center;
+		margin: 67px auto 38px;
+	}
+
+	&__box {
+		max-width: 750px;
+		background-color: $cLightGray3;
+		padding: 87px 90px 90px;
+		box-sizing: border-box;
+		margin: 0 auto 70px;
+	}
+	&__dt {
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 27px;
+		margin-bottom: 5px;
+	}
+	&__dd {
+		margin-bottom: 27px;
+		&--space {
+			display: block;
+			height: 5px;
+		}
+	}
+	&__required {
+		font-size: 12px;
+		letter-spacing: 0.05em;
+		line-height: 27px;
+		color: $cColorMain;
+		margin-left: 10px;
+	}
+	& input[type="radio"] {
+		display: inline-block;
+		margin-bottom: 5px;
+	}
+	& input[type="radio"]:nth-child(2),
+	& input[type="radio"]:nth-child(3) {
+		margin-left: 40px;
+	}
+	& input[type="text"],
+	& input[type="email"],
+	& input[type="tel"] {
+		height: 45px;
+		width: 300px;
+		background-color: $cWhite;
+		border: 1px solid #AAAAAA;
+		border-radius: 6px;
+		padding: 10px;
+	}
+	& input[type="tel"] {
+		width: auto;
+	}
+	&__small {
+		font-size: 12px;
+		font-weight: normal;
+		letter-spacing: 0.05em;
+		margin-left: 10px;
+	}
+	& textarea {
+		background-color: $cWhite;
+		border: 1px solid #AAAAAA;
+		border-radius: 6px;
+		padding: 12px 8px;
+	}
+	& select {
+		width: 300px;
+		background-color: $cWhite;
+		border: 1px solid #AAAAAA;
+		border-radius: 6px;
+		padding: 12px 8px;
+
+	}
+	&__btn {
+		text-align: center;
+		position: relative;
+		width: 220px;
+		margin: 0 auto;
+	}
+}

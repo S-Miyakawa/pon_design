@@ -60,5 +60,5 @@ window.onload = function(){
 		}
 	}
 	// <-- パンくずリスト
-}
 
+}

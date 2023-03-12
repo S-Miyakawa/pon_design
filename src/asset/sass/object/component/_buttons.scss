@@ -74,6 +74,43 @@
 	}
 }
 
+.c-btn-submit {
+	border-radius: 50px;
+	width: 220px;
+	height: 55px;
+	margin: 0 auto;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1.4;
+	display: inline-block;
+	color: $cWhite;
+	letter-spacing: 0.1em;
+	padding: 18px 0;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	transition: all 0.3s;
+	background: linear-gradient(to right, #7633a4 0%, #250d65 51%, #7633a4 100%);
+	background-size: 200% 100%;
+
+	&:hover {
+		background-position: right center;
+
+		& + .c-btn-submit--icon {
+			transform: translate(50%,-50%);
+		}
+	}
+
+	&--icon {
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%) translateX(0);
+		color: $cWhite;
+		transition: 0.3s;
+	}
+}
+
 
 .c-news-title {
 	font-family: 'Montserrat', sans-serif;;

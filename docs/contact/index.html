@@ -40,6 +40,13 @@
             rel="stylesheet"
             href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
         />
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"> -->
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> -->
+        <link
+            rel="stylesheet"
+            href="https://kit.fontawesome.com/505dfa226a.css"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./../asset/css/style.css" />
 
         <!-- google fonts -->
@@ -139,25 +146,31 @@
                                 id="type"
                                 name="user_type"
                                 value="job"
-                            />お仕事のご依頼・ご相談
+                                required
+                            />
+                            お仕事のご依頼・ご相談
                             <input
                                 type="radio"
                                 id="type"
                                 name="user_type"
                                 value="estimate"
-                            />お見積りのご依頼
+                            />
+                            お見積りのご依頼
                             <input
                                 type="radio"
                                 id="type"
                                 name="user_type"
                                 value="recruit"
-                            />採用について
+                            />
+                            採用について<br />
+                            <span class="p-contact__dd--space"></span>
                             <input
                                 type="radio"
                                 id="type"
                                 name="user_type"
                                 value="other"
-                            />その他
+                            />
+                            その他
                         </dd>
                         <dt class="p-contact__dt">
                             <label for="name"
@@ -167,7 +180,12 @@
                             >
                         </dt>
                         <dd class="p-contact__dd">
-                            <input type="text" id="name" name="user_name" />
+                            <input
+                                type="text"
+                                id="name"
+                                name="user_name"
+                                required
+                            />
                         </dd>
                         <dt class="p-contact__dt">
                             <label for="company"
@@ -181,6 +199,7 @@
                                 type="text"
                                 id="company"
                                 name="user_company"
+                                required
                             />
                         </dd>
                         <dt class="p-contact__dt">
@@ -191,7 +210,12 @@
                             >
                         </dt>
                         <dd class="p-contact__dd">
-                            <input type="email" id="email" name="user_email" />
+                            <input
+                                type="email"
+                                id="email"
+                                name="user_email"
+                                required
+                            />
                         </dd>
                         <dt class="p-contact__dt">
                             <label for="tel"
@@ -201,13 +225,18 @@
                             >
                         </dt>
                         <dd class="p-contact__dd">
-                            <input type="" id="email" name="user_email" />
+                            <input type="tel" id="email" name="user_email" />
                         </dd>
                         <dt class="p-contact__dt">
                             <label for="comment">お問い合わせ内容</label>
                         </dt>
                         <dd class="p-contact__dd">
-                            <textarea name="comment" rows="7"></textarea>
+                            <textarea
+                                name="comment"
+                                rows="10"
+                                cols="63"
+                                placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
+                            ></textarea>
                         </dd>
                         <dt class="p-contact__dt">
                             <label for="way"
@@ -218,7 +247,7 @@
                             >
                         </dt>
                         <dd class="p-contact__dd">
-                            <select name="way">
+                            <select name="way" required>
                                 <option value="">選択してください</option>
                                 <option value="1">Google/Yahoo検索</option>
                                 <option value="2">SNS</option>
@@ -228,7 +257,15 @@
                             </select>
                         </dd>
                     </dl>
-                    <input type="submit" value="送信する" />
+                    <div class="p-contact__btn">
+                        <input
+                            type="submit"
+                            value="送信する"
+                            class="c-btn-submit"
+                        /><i
+                            class="fa-solid fa-caret-right c-btn-submit--icon"
+                        ></i>
+                    </div>
                 </form>
             </div>
 
@@ -298,6 +335,11 @@
         <script
             src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
             defer
+        ></script>
+        <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script> -->
+        <script
+            src="https://kit.fontawesome.com/505dfa226a.js"
+            crossorigin="anonymous"
         ></script>
         <script src="./../asset/js/scroll.js"></script>
         <script src="./../asset/js/script.js" defer></script>
