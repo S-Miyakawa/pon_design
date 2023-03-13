@@ -53,6 +53,10 @@
 	z-index: 0;
 	overflow: hidden;
 
+	@include mq(md,max){
+		margin: 0 auto;
+	}
+
 	&::before {
 		content: '';
 		position: absolute;

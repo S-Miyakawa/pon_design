@@ -200,6 +200,7 @@
 .p-index-service {
 	max-width: 1110px;
 	margin: 140px auto;
+	padding: 0 15px;
 
 	&__title {
 		max-width: 180px;
@@ -212,9 +213,22 @@
 		width: 100%;
 		justify-content: space-between;
 		margin: 27px auto 30px;
+
+		@include mq(md,max){
+			flex-direction: column;
+		}
 	}
 	&__item {
 		width: 31.5%;
+
+		@include mq(md,max){
+			width: 100%;
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 	&__img {
 		width: 100%;
@@ -233,6 +247,10 @@
 		font-size: 15px;
 		letter-spacing: 0.05em;
 		line-height: 27px;
+
+		@include mq(md,max){
+			font-size: 14px;
+		}
 	}
 }
 
