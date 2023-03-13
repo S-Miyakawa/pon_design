@@ -20,6 +20,10 @@
 	position: relative;
 	transition: all 0.3s;
 
+	@include mq(md,max){
+		margin: 0;
+	}
+
 	&:hover {
 		opacity: 0.8;
 

@@ -1,4 +1,5 @@
 @use 'color' as *;
+@use '../foundation/mixin' as *;
 
 /* base
 --------------------------- */
@@ -6,4 +7,11 @@ body {
 	font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 	color: $cDarkGray;
 	overflow-x: hidden;
+}
+
+.md-only {
+	display: none;
+	@include mq(md,max){
+		display: inline-block;
+	}
 }

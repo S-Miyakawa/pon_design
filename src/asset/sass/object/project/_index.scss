@@ -17,10 +17,13 @@
 	text-align: center;
 	color: $cWhite;
 	position: relative;
+	padding-left: 5vw;
+	padding-right: 5vw;
 
-	&__inner {
-
+	@include mq(md,max){
+		text-align: left;
 	}
+
 	&__title {
 		font-size: 72px;
 		font-weight: bold;
@@ -29,6 +32,13 @@
 		margin-bottom: 15px;
 		text-transform: uppercase;
 		margin-top: -9px;
+
+		@include mq(md,max){
+			font-size: 40px;
+			letter-spacing: .03em;
+			line-height: 44px;
+			margin-top: 0;
+		}
 	}
 	&__subtitle {
 		font-size: 24px;
@@ -36,6 +46,12 @@
 		letter-spacing: 0.1em;
 		line-height: 1.58;
 		margin-bottom: 52px;
+
+		@include mq(md,max){
+			font-size: 16px;
+			line-height: 29px;
+			margin-bottom: 30px;
+		}
 	}
 	&__scroll {
 		position: absolute;
@@ -44,6 +60,10 @@
 		width: 60px;
 		height: 120px;
 		text-align: center;
+
+		@include mq(md,max){
+			height: 90px;
+		}
 
 		&--text {
 			font-size: 12px;
@@ -67,7 +87,10 @@
 				$name:scrollAnime,
 				$iteration-count: infinite,
 				$duration: 1.5s
-				)
+			);
+			@include mq(md,max){
+				height: 50px;
+			}
 		}
 	}
 }
