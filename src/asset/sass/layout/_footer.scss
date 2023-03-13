@@ -1,4 +1,5 @@
 @use '../foundation/color' as *;
+@use '../foundation/mixin'  as *;
 
 /* l-footer
 --------------------------- */
@@ -6,19 +7,25 @@
 	width: 100%;
 	height: 190px;
 	background-color: $cBaseBlack;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
 	text-align: center;
+	padding-top: 60px;
 
 	&__ul {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		margin-bottom: 36px;
+		margin-bottom: 25px;
+
+		@include mq(md,max){
+			width: 85vw;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+			margin-left: 35px;
+		}
 	}
-	&__li:not(:first-child) {
-		margin-left: 20px;
+	&__li {
+		margin-right: 20px;
+		margin-bottom: 13px;
 	}
 	&__link {
 		font-size: 12px;
