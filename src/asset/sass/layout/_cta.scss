@@ -1,21 +1,28 @@
 @use '../foundation/color' as *;
+@use '../foundation/mixin' as *;
 
 .l-cta {
 	width: 100%;
 	height: 356px;
 	background-color: #f0f0f0;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	padding-top: 80px;
 
 	&__title {
 		margin-bottom: 28px;
+		@include mq(md,max){
+			margin-bottom: 20px;
+		}
 	}
 	&__text {
 		font-size: 15px;
 		letter-spacing: 0.05em;
 		margin-bottom: 25px;
+
+		@include mq(md,max){
+			font-size: 14px;
+			line-height: 2;
+			margin-bottom: 20px;
+		}
 	}
 }
