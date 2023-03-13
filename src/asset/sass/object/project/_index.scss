@@ -117,6 +117,7 @@
 .p-index-news {
 	width: 100%;
 	max-width: $contentWidth;
+	padding: 0 15px;
 	margin: 0 auto;
 
 	&__flex {
@@ -124,11 +125,21 @@
 		display: flex;
 		justify-content: space-between;
 		margin: 70px auto 0;
+
+		@include mq(md,max){
+			flex-direction: column;
+			margin-top: 40px;
+		}
 	}
 	&__left {
-		width: 19%;
+		width: 170px;
 		min-width: 170px;
 		margin-top: 14px;
+
+		@include mq(md,max){
+			text-align: center;
+			margin: 0 auto 20px;
+		}
 	}
 	&__right {
 		width: 81%;
@@ -140,27 +151,46 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
+
+		@include mq(md,max){
+			flex-direction: column;
+			align-items: start;
+		}
 	}
 	&__dt {
-		width: 13%;
+		width: 200px;
 		font-size: 14px;
 		font-weight: 400;
 		letter-spacing: 0.05em;
-		line-height: 40px;
+		line-height: 35px;
+		margin-bottom: 5px;
+
+		@include mq(md,max){
+			width: 100%;
+			margin-bottom: 0;
+		}
 	}
 	&__dd {
-		width: 87%;
-		line-height: 40px;
+		width: calc(100% - 200px);
+		line-height: 26px;
+		margin-bottom: 5px;
+
+		@include mq(md,max){
+			width: 100%;
+			margin-bottom: 24px;
+		}
 	}
 	&__dt:last-child,
 	&__dd:last-child {
 		margin-bottom: 0;
 	}
+	&__date {
+		margin-right: 20px;
+	}
 	&__link {
 		font-size: 14px;
 		font-weight: 400;
 		letter-spacing: 0.05em;
-		margin-left: 20px;
 		&:hover {
 			text-decoration: underline;
 		}

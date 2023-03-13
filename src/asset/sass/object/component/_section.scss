@@ -1,4 +1,5 @@
 @use '../../foundation/color' as *;
+@use '../../foundation/mixin' as *;
 
 /* c-section
 --------------------------- */
@@ -12,6 +13,10 @@
 		letter-spacing: 0.02em;
 		text-transform: uppercase;
 		color: $cColorMain;
+
+		@include mq(md,max){
+			font-size: 30px;
+		}
 	}
 	&__sub {
 		font-size: 13px;
