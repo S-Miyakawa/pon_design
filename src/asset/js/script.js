@@ -60,5 +60,31 @@ window.onload = function(){
 		}
 	}
 	// <-- パンくずリスト
+};
 
-}
+	// --> ハンバーガーメニュー
+	class MobleMenu {
+		constructor(){
+			this.DOM = {};
+			this.DOM.btn = document.querySelector('.l-header__hamburger');
+			this.DOM.header = document.querySelector('.l-header');
+			this.eventType = this._getEventType();
+			this._addEvent();
+		}
+	
+		_getEventType(){
+			const isTouchCapable = "ontouchstart" in window ||
+			(window.DocumentTouch && document instanceof DocumentTouch);
+	
+			return isTouchCapable ? "touchstart" : "click";
+		}
+		_toggle() {
+			this.DOM.header.classList.toggle('menu-open');
+		}
+		_addEvent() {
+			this.DOM.btn.addEventListener(this.eventType,this._toggle.bind(this));
+		}
+	}
+	
+	new MobleMenu();
+	// <-- ハンバーガーメニュー

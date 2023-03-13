@@ -26,6 +26,7 @@ $mq-breakpoints: (
   'xl': 1140px,
   'xxl': 1300px,
 ) !default;
+
 @mixin mq($breakpoint: md, $rule: min) {
   $breakpoint: map-get($mq-breakpoints, $breakpoint);
   @if $rule == max {
