@@ -147,6 +147,11 @@
 	opacity: 0;
 	transition: all 0.3s;
 
+	@include mq(md,max){
+		bottom: 20px;
+		right: 20px;
+	}
+
 	&.inview {
 		opacity: 1;
 	}
