@@ -1,7 +1,13 @@
+@use '../../foundation/mixin' as *;
+
 .p-service {
 	&__contents {
-		width: 1110px;
+		max-width: 1110px;
+		padding: 0 15px;
 		margin: 70px auto 110px;
+		@include mq(md,max){
+			margin: 40px auto 80px;
+		}
 	}
 
 	&__item {
@@ -9,15 +15,31 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 60px;
+
+		@include mq(md,max){
+			flex-direction: column;
+			margin-bottom: 40px;
+		}
+
 		&:last-child{
 			margin-bottom: 0;
 		}
 	}
 	&__left {
-		width: 445px;
+		width: 40%;
+		@include mq(md,max){
+			width: 100%;
+			margin-bottom: 12px;
+		}
 	}
 	&__right {
-		width: 615px;
+		width: 55%;
+		@include mq(md,max){
+			width: 100%;
+		}
+	}
+	&__img {
+		width: 100%;
 	}
 	&__title {
 		font-size: 24px;
@@ -25,10 +47,18 @@
 		letter-spacing: 0.05em;
 		margin-top: 8px;
 		margin-bottom: 26px;
+		@include mq(md,max){
+			font-size: 18px;
+			text-align: center;
+			margin-bottom: 15px;
+		}
 	}
 	&__text {
 		font-size: 15px;
 		letter-spacing: 0.05em;
-		line-height: 27px;
+		line-height: 1.8;
+		@include mq(md,max){
+			font-size: 14px;
+		}
 	}
 }
