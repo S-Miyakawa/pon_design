@@ -47,10 +47,10 @@
                 "subtitle": "contact",
                 "subsubtitle": "お問い合わせ"
             },
-            "newsarticle": {
+            "new-sarticle": {
                 "title": "Webデザインニュースサイト「ウェブマガジン」に取材いただきました｜PON DESIGN",
                 "description": "PON DESIGNは、新規サイト制作や運用、アプリ開発に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。",
-                "url": "newsarticle",
+                "url": "news-article",
                 "subtitle": "news",
                 "subsubtitle": "お知らせ"
             }
