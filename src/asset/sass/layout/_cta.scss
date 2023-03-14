@@ -8,6 +8,11 @@
 	text-align: center;
 	padding-top: 80px;
 
+	@include mq(md,max){
+		height: 335px;
+		padding-top: 60px;
+	}
+
 	&__title {
 		margin-bottom: 28px;
 		@include mq(md,max){

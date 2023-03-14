@@ -125,13 +125,17 @@
 	font-size: 12px;
 	font-weight: bold;
 	letter-spacing: 0.05em;
-	line-height: 26px;
+	line-height: 2.1;
 	color: $cDarkGray;
 	text-align: center;
 	display: inline-block;
 	width: 80px;
 	background-color: $cLightGray;
 	border-radius: 14px;
+
+	@include mq(md,max){
+		font-size: 11px;
+	}
 }
 
 .c-upbtn {

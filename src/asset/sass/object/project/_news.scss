@@ -1,9 +1,15 @@
 @use '../../foundation/color' as *;
+@use '../../foundation/mixin' as *;
 
 .p-news {
 	&__content {
-		max-width: 750px;
+		max-width: 780px;
+		padding: 0 15px;
 		margin: 70px auto;
+
+		@include mq(md,max){
+			margin: 40px auto 80px;
+		}
 	}
 
 	&__dl {
@@ -11,12 +17,22 @@
 		width: 100%;
 		flex-wrap: wrap;
 		margin-bottom: 40px;
+
+		@include mq(md,max){
+			flex-direction: column;
+			margin-bottom: 10px;
+		}
 	}
 	&__dt {
 		font-size: 14px;
 		letter-spacing: 0.05em;
-		width: 195px;
+		width: 27%;
 		margin-bottom: 15px;
+
+		@include mq(md,max){
+			width: 100%;
+			margin-bottom: 5px;
+		}
 
 		&--date {
 			margin-right: 20px;
@@ -26,8 +42,13 @@
 		font-size: 14px;
 		letter-spacing: 0.05em;
 		line-height: 1.8;
-		width: 550px;
+		width: 73%;
 		margin-bottom: 15px;
+
+		@include mq(md,max){
+			width: 100%;
+			margin-bottom: 30px;
+		}
 	}
 	&__link {
 		&:hover {
