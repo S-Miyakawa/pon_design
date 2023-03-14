@@ -1,9 +1,16 @@
 @use '../../foundation/color' as *;
+@use '../../foundation/mixin' as *;
 
 .p-recruit {
 	text-align: center;
 	background-image: url(../img/bg-geometry.png);
 	background-repeat: repeat;
+
+	&__wrapper {
+		max-width: 1140px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
 
 	&__big-title {
 		font-size: 72px;
@@ -12,17 +19,33 @@
 		color: $cColorMain;
 		padding-top: 95px;
 		margin-bottom: 15px;
+		@include mq(md,max){
+			font-size: 48px;
+			line-height: 1.17;
+			letter-spacing: .015em;
+			padding-top: 60px;
+			margin-bottom: 18px;
+		}
 	}
 	&__big-subtitle {
 		font-size: 32px;
 		letter-spacing: 0.02em;
 		color: $cColorMain;
 		margin-bottom: 30px;
+		@include mq(md,max){
+			font-size: 18px;
+			letter-spacing: .04em;
+			margin-bottom: 25px;
+		}
 	}
 	&__text {
 		font-size: 16px;
 		letter-spacing: 0.05em;
-		line-height: 28px;
+		line-height: 1.75;
+		@include mq(md,max){
+			font-size: 15px;
+			line-height: 1.8;
+		}
 	}
 	&__img-block {
 		width: 100%;
@@ -32,41 +55,61 @@
 		clip-path: polygon(0 15%,100% 0,100% 85%,0 100%);
 		object-fit: cover;
 		margin: 40px auto 70px;
+		@include mq(md,max){
+			margin-bottom: 40px;
+		}
 	}
 	&__title--main {
 		font-size: 32px;
 		font-weight: bold;
 		letter-spacing: 0.02em;
 		color: $cColorMain;
+		@include mq(md,max){
+			font-size: 24px;
+		}
 	}
 
 	&__box {
-		width: 1110px;
+		max-width: 1110px;
 		border: 1px solid #b067cf;
 		border-radius: 10px;
 		background-color: $cWhite;
-		padding: 65px 0 57px;
+		padding: 65px 95px 57px;
 		margin: 28px auto 130px;
+		@include mq(md,max){
+			padding: 35px 15px 25px;
+			margin-bottom: 70px;
+		}
 	}
 	&__sub-title {
 		font-size: 24px;
 		font-weight: bold;
 		letter-spacing: 0.03em;
+		@include mq(md,max){
+			font-size: 16px;
+		}
+	}
+	&__dl-block {
+		max-width: 920px;
+		margin: 0 auto;
 	}
 	&__dl {
-		width: 920px;
+		width: 100%;
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		text-align: left;
 		margin: 40px auto 50px;
+		@include mq(md,max){
+			flex-direction: column;
+		}
 	}
 	&__dt {
-		width: 195px;
+		width: 21%;
 		font-size: 15px;
 		font-weight: bold;
 		letter-spacing: 0.05em;
-		line-height: 27px;
+		line-height: 1.8x;
 		border-bottom: 1px solid #DDDDDD;
 		padding: 30px 0 30px 10px;
 
@@ -74,15 +117,28 @@
 			display: flex;
 			align-items: center;
 		}
+
+		@include mq(md,max){
+			font-size: 14px;
+			width: 100%;
+			border-bottom: none;
+			padding: 25px 0 0 0;
+		}
 	}
 	&__dd {
-		width: 725px;
+		width: 79%;
 		font-size: 15px;
 		font-weight: normal;
 		letter-spacing: 0.05em;
-		line-height: 27px;
+		line-height: 1.8;
 		border-bottom: 1px solid #DDDDDD;
 		padding: 30px 0 30px 0;
+
+		@include mq(md,max){
+			font-size: 14px;
+			width: 100%;
+			padding: 10px 0 20px 0;
+		}
 	}
 	&__ul {
 		list-style-type:disc;
@@ -94,6 +150,20 @@
 	}
 
 	&__video {
+		padding-top: 56.25%;
+		width: 100%;
+		position: relative;
 		margin: 36px auto 110px;
+		@include mq(md,max){
+			margin-bottom: 80px;
+		}
+
+		& > iframe {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
 	}
 }
