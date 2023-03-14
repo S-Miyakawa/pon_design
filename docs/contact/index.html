@@ -127,147 +127,158 @@
         <!-- main -->
         <main class="p-contact">
             <p class="p-contact__comment">
-                Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。
+                Webサイトの制作のご依頼やお見積りなど、<br
+                    class="md-only"
+                />お気軽にご相談ください。
             </p>
 
-            <div class="p-contact__box">
-                <form action="#" method="get" class="p-contact__form">
-                    <dl class="p-contact__dl">
-                        <dt class="p-contact__dt">
-                            <label for="type"
-                                >お問い合わせ種別<span
-                                    class="p-contact__required"
-                                    >*必須</span
-                                ></label
-                            >
-                        </dt>
-                        <dd class="p-contact__dd">
+            <div class="p-contact__wrapper">
+                <div class="p-contact__box">
+                    <form action="#" method="get" class="p-contact__form">
+                        <dl class="p-contact__dl">
+                            <dt class="p-contact__dt">
+                                <label for="type"
+                                    >お問い合わせ種別<span
+                                        class="p-contact__required"
+                                        >*必須</span
+                                    ></label
+                                >
+                            </dt>
+                            <dd class="p-contact__dd">
+                                <input
+                                    type="radio"
+                                    id="type"
+                                    name="user_type"
+                                    value="job"
+                                    required
+                                    checked="true"
+                                />
+                                お仕事のご依頼・ご相談<br class="md-only" />
+                                <input
+                                    type="radio"
+                                    id="type"
+                                    name="user_type"
+                                    value="estimate"
+                                />
+                                お見積りのご依頼<br class="md-only" />
+                                <input
+                                    type="radio"
+                                    id="type"
+                                    name="user_type"
+                                    value="recruit"
+                                />
+                                採用について<br />
+                                <!-- <span class="p-contact__dd--space"></span> -->
+                                <input
+                                    type="radio"
+                                    id="type"
+                                    name="user_type"
+                                    value="other"
+                                />
+                                その他
+                            </dd>
+                            <dt class="p-contact__dt">
+                                <label for="name"
+                                    >お名前<span class="p-contact__required"
+                                        >*必須</span
+                                    ></label
+                                >
+                            </dt>
+                            <dd class="p-contact__dd">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="user_name"
+                                    required
+                                />
+                            </dd>
+                            <dt class="p-contact__dt">
+                                <label for="company"
+                                    >会社名<span class="p-contact__required"
+                                        >*必須</span
+                                    ></label
+                                >
+                            </dt>
+                            <dd class="p-contact__dd">
+                                <input
+                                    type="text"
+                                    id="company"
+                                    name="user_company"
+                                    required
+                                />
+                            </dd>
+                            <dt class="p-contact__dt">
+                                <label for="email"
+                                    >メールアドレス<span
+                                        class="p-contact__required"
+                                        >*必須</span
+                                    ></label
+                                >
+                            </dt>
+                            <dd class="p-contact__dd">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="user_email"
+                                    required
+                                />
+                            </dd>
+                            <dt class="p-contact__dt">
+                                <label for="tel"
+                                    >電話番号<span class="p-contact__small"
+                                        >(半角数字ハイフンなし)</span
+                                    ></label
+                                >
+                            </dt>
+                            <dd class="p-contact__dd">
+                                <input
+                                    type="tel"
+                                    id="email"
+                                    name="user_email"
+                                />
+                            </dd>
+                            <dt class="p-contact__dt">
+                                <label for="comment">お問い合わせ内容</label>
+                            </dt>
+                            <dd class="p-contact__dd">
+                                <textarea
+                                    name="comment"
+                                    rows="8"
+                                    cols="63"
+                                    placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
+                                ></textarea>
+                            </dd>
+                            <dt class="p-contact__dt">
+                                <label for="way"
+                                    >PON
+                                    DESIGNをどちらでお知りになりましたか？<span
+                                        class="p-contact__required"
+                                        >*必須</span
+                                    ></label
+                                >
+                            </dt>
+                            <dd class="p-contact__dd">
+                                <select name="way" required>
+                                    <option value="">選択してください</option>
+                                    <option value="1">Google/Yahoo検索</option>
+                                    <option value="2">SNS</option>
+                                    <option value="3">ブログ</option>
+                                    <option value="4">友人や知人</option>
+                                    <option value="5">その他</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        <div class="p-contact__btn">
                             <input
-                                type="radio"
-                                id="type"
-                                name="user_type"
-                                value="job"
-                                required
-                            />
-                            お仕事のご依頼・ご相談
-                            <input
-                                type="radio"
-                                id="type"
-                                name="user_type"
-                                value="estimate"
-                            />
-                            お見積りのご依頼
-                            <input
-                                type="radio"
-                                id="type"
-                                name="user_type"
-                                value="recruit"
-                            />
-                            採用について<br />
-                            <span class="p-contact__dd--space"></span>
-                            <input
-                                type="radio"
-                                id="type"
-                                name="user_type"
-                                value="other"
-                            />
-                            その他
-                        </dd>
-                        <dt class="p-contact__dt">
-                            <label for="name"
-                                >お名前<span class="p-contact__required"
-                                    >*必須</span
-                                ></label
-                            >
-                        </dt>
-                        <dd class="p-contact__dd">
-                            <input
-                                type="text"
-                                id="name"
-                                name="user_name"
-                                required
-                            />
-                        </dd>
-                        <dt class="p-contact__dt">
-                            <label for="company"
-                                >会社名<span class="p-contact__required"
-                                    >*必須</span
-                                ></label
-                            >
-                        </dt>
-                        <dd class="p-contact__dd">
-                            <input
-                                type="text"
-                                id="company"
-                                name="user_company"
-                                required
-                            />
-                        </dd>
-                        <dt class="p-contact__dt">
-                            <label for="email"
-                                >メールアドレス<span class="p-contact__required"
-                                    >*必須</span
-                                ></label
-                            >
-                        </dt>
-                        <dd class="p-contact__dd">
-                            <input
-                                type="email"
-                                id="email"
-                                name="user_email"
-                                required
-                            />
-                        </dd>
-                        <dt class="p-contact__dt">
-                            <label for="tel"
-                                >電話番号<span class="p-contact__small"
-                                    >(半角数字ハイフンなし)</span
-                                ></label
-                            >
-                        </dt>
-                        <dd class="p-contact__dd">
-                            <input type="tel" id="email" name="user_email" />
-                        </dd>
-                        <dt class="p-contact__dt">
-                            <label for="comment">お問い合わせ内容</label>
-                        </dt>
-                        <dd class="p-contact__dd">
-                            <textarea
-                                name="comment"
-                                rows="8"
-                                cols="63"
-                                placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
-                            ></textarea>
-                        </dd>
-                        <dt class="p-contact__dt">
-                            <label for="way"
-                                >PON DESIGNをどちらでお知りになりましたか？<span
-                                    class="p-contact__required"
-                                    >*必須</span
-                                ></label
-                            >
-                        </dt>
-                        <dd class="p-contact__dd">
-                            <select name="way" required>
-                                <option value="">選択してください</option>
-                                <option value="1">Google/Yahoo検索</option>
-                                <option value="2">SNS</option>
-                                <option value="3">ブログ</option>
-                                <option value="4">友人や知人</option>
-                                <option value="5">その他</option>
-                            </select>
-                        </dd>
-                    </dl>
-                    <div class="p-contact__btn">
-                        <input
-                            type="submit"
-                            value="送信する"
-                            class="c-btn-submit"
-                        /><i
-                            class="fa-solid fa-caret-right c-btn-submit--icon"
-                        ></i>
-                    </div>
-                </form>
+                                type="submit"
+                                value="送信する"
+                                class="c-btn-submit"
+                            /><i
+                                class="fa-solid fa-caret-right c-btn-submit--icon"
+                            ></i>
+                        </div>
+                    </form>
+                </div>
             </div>
 
             <div class="l-cta">
