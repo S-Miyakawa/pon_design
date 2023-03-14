@@ -26,6 +26,10 @@
 	&__li {
 		margin-right: 20px;
 		margin-bottom: 13px;
+
+		&:last-child {
+			margin-right: 0;
+		}
 	}
 	&__link {
 		font-size: 12px;
