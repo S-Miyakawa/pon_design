@@ -407,13 +407,16 @@
 		max-width: 864px;
 		padding: 0 20px 0 40px;
 		box-sizing: border-box;
-		@include mq(xl,max){
-			width: 95vw;
-			transform: translateX(-50%);
 
-			& > img {
-				width: 100%;
-			}
+		& img {
+			width: 100%;
+		}
+
+		@include mq(xl,max){
+			max-width: 370px;
+			width: 90vw;
+			padding: 0;
+			transform: translateX(-50%);
 		}
 	}
 
@@ -446,10 +449,6 @@
 		line-height: 27px;
 		margin-top: 36px;
 		margin-bottom: 30px;
-
-		@include mq(md,max){
-
-		}
 	}
 	&__inner {
 		position: absolute;
