@@ -1,4 +1,5 @@
 @use '../../foundation/color' as *;
+@use '../../foundation/mixin' as *;
 
 .bread {
 	position: relative;
@@ -6,26 +7,43 @@
 	height: 45px;
 	background-color: $cLightGray2;
 
+	@include mq(md,max){
+		height: 35px;
+	}
+
 	&__ul {
-		width: 1110px;
+		max-width: 1110px;
 		height: 100%;
 		display: flex;
 		align-items: center;
 		margin: 0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;
 	}
 	&__li {
 		font-size: 12px;
 		letter-spacing: 0.05em;
 
+		@include mq(md,max){
+			font-size: 11px;
+		}
+
 		&:not(:first-child) {
 			margin-left: 30px;
 			position: relative;
+
+			@include mq(md,max){
+				margin-left: 27px;
+			}
 			&::before {
 				content: '>';
 				position: absolute;
 				top: 0;
 				left: -20px;
 
+				@include mq(md,max){
+					left: -17px;
+				}
 			}
 		}
 	}
