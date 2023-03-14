@@ -1,4 +1,12 @@
 $(function(){
+	// 上に戻るボタン -->
+	const upbtn = $('.c-upbtn');
+	upbtn.click(function(){
+		$('body, html').animate({scrollTop: 0},500);
+			return false;
+		});
+	// <-- 上に戻るボタン
+
 	// swipper -->
 	const swiper = new Swiper(".swiper", {
 		loop: true,

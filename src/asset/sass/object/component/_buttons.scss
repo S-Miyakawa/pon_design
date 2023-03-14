@@ -149,6 +149,7 @@
 	background-color: $cWhite;
 	box-shadow: 0 0 6px rgba(0,0,0, 0.16);
 	opacity: 0;
+	cursor: pointer;
 	transition: all 0.3s;
 
 	@include mq(md,max){
@@ -158,6 +159,9 @@
 
 	&.inview {
 		opacity: 1;
+		&:hover {
+			opacity: 0.8;
+		}
 	}
 	&::before {
 		content: '';
