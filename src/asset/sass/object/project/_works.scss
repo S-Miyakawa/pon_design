@@ -1,15 +1,23 @@
 @use '../../foundation/color' as *;
+@use '../../foundation/mixin' as *;
 
 .p-works {
 	&__contents {
 		max-width: 1110px;
+		padding: 0 15px;
 		margin: 70px auto 100px;
+		@include mq(md,max){
+			margin: 40px auto 50px;
+		}
 	}
 
 	&__flex {
 		display: flex;
 		width: 100%;
 		flex-wrap: wrap;
+		@include mq(md,max){
+			flex-direction: column;
+		}
 	}
 	&__item {
 		width: 31.5%;
@@ -18,6 +26,11 @@
 		margin-bottom: 15px;
 		&:nth-child(3) {
 			margin-right: 0;
+		}
+
+		@include mq(md,max){
+			width: 100%;
+			margin-bottom: 30px;
 		}
 	}
 	&__img {
