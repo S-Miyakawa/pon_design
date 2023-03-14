@@ -1,4 +1,5 @@
 @use '../foundation/color' as *;
+@use '../foundation/mixin' as *;
 
 .l-sub-mv {
 	height: 240px;
@@ -8,9 +9,17 @@
 	background-repeat: no-repeat;
 	text-align: center;
 
+	@include mq(md,max){
+		height: 180px;
+	}
+
 	&__inner {
 		color: $cWhite;
 		padding-top: 110px;
+
+		@include mq(md,max){
+			padding-top: 83px;
+		}
 	}
 	&__title {
 		font-size: 36px;
@@ -18,6 +27,10 @@
 		text-transform: uppercase;
 		letter-spacing: 0.05em;
 		margin-bottom: 5px;
+
+		@include mq(md,max){
+			font-size: 30px;
+		}
 	}
 	&__subtitle {
 		font-size: 13px;
