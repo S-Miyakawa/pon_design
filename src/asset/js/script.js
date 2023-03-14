@@ -2,7 +2,8 @@ $(function(){
 	// swipper -->
 	const swiper = new Swiper(".swiper", {
 		loop: true,
-		autoplay: true,
+		autoplay: {delay:4000},
+		speed: 500,
 		effect: 'fade',
 		// ページネーションが必要なら追加
 		pagination: {
