@@ -203,10 +203,10 @@
 
 .p-index-service {
 	max-width: 1110px;
-	margin: 140px auto 0;
+	margin: 140px auto 140px;
 	padding: 0 15px;
 	@include mq(md,max){
-		margin-top: 80px;
+		margin: 80px auto 0;
 	}
 
 	&__title {
@@ -303,6 +303,7 @@
 		
 		@include mq(md,max){
 			width: 100%;
+			margin-bottom: 20px;
 		}
 	}
 	&__right {
@@ -316,13 +317,19 @@
 	}
 	&__title {
 		margin-bottom: 28px;
+		@include mq(md,max){
+			margin-bottom: 15px;
+		}
 	}
 	&__text {
 		font-size: 15px;
 		font-weight: 300;
 		letter-spacing: 0.05em;
-		line-height: 27px;
+		line-height: 1.8;
 		margin-bottom: 25px;
+		@include mq(md,max){
+			font-size: 14px;
+		}
 	}
 }
 
@@ -386,6 +393,9 @@
 	position: static;
 	text-align: right;
 	margin-top: 13px;
+	@include mq(md,max){
+		margin-top: 7px;
+	}
 }
 
 .swiper-pagination-bullet {
