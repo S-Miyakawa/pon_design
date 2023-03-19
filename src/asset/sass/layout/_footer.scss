@@ -10,17 +10,22 @@
 	text-align: center;
 	padding-top: 60px;
 
+	@include mq(md,max){
+		height: 220px;
+	}
+
 	&__ul {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		margin-bottom: 25px;
-
+ 
 		@include mq(md,max){
 			width: 85vw;
 			justify-content: flex-start;
 			flex-wrap: wrap;
 			margin-left: 35px;
+			margin-bottom: 22px;
 		}
 	}
 	&__li {
@@ -51,5 +56,14 @@
 		&:hover {
 			opacity: 0.9;
 		}
+	}
+
+	&__coding-practice {
+		margin-top: 5px;
+	}
+	&__coding-practice--link {
+		font-size: 10px;
+		color: #A798B7;
+		letter-spacing: 0.03em;
 	}
 }
